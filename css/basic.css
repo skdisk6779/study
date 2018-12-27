@@ -1,0 +1,17 @@
+@charset "utf-8";
+body{
+  background-color: #ffff00;
+}
+header{
+  border-width: 5px;
+  border-style: solid;
+  border-color: cornflowerblue;
+
+}
+p{
+  background-color: rgba(255,255,0,0.5 );
+}
+h1, h2{
+  background-color: hsla(100,100%,30%,0.5);
+
+}
