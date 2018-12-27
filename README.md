@@ -163,11 +163,11 @@
 #### 
  * fieldset과 legend, lable은 한 set이다
  * input의 id(유닉한 이름값) 속성값을 lable의 for 속성값으로 넣어서 짝꿍을 만들어 준다.
- * 네이밍 방법
-  ** userName :CC(낙타케이스)
-  ** user_name :SC(뱀케이스)
-  ** user-name :CC(케밥케이스)
- * POST VS GET
+ * 네이밍 방법  
+  ** userName :CC(낙타케이스)  
+  ** user_name :SC(뱀케이스)  
+  ** user-name :CC(케밥케이스)  
+ * POST VS GET  
   ** POST: 값을 던지기만 할거다.
 ```HTML
 <!DOCTYPE html>
@@ -189,6 +189,67 @@
   </fieldset>
 
 </form>
+</body>
+</html>
+```
+-----------------------------------------------------------------
+#### video
+```HTML
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>비디오 삽입하기</title>
+</head>
+<body>
+  <h1>HTML5 비디오 요소</h1>
+  <video controls muted poster="./asset/snowman.png">
+    <source src="./asset/Google-Developer-Stories.mp4">
+    <track src="./asset/google-developer-stories-subtitles-en.vtt" kind="captions" srclang="en" label="English Caption">
+  </video>
+</body>
+</html>
+```
+-----------------------------------------------------------------
+#### iframe
+```HTML
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>iframe 활용</title>
+</head>
+<body>
+  <h1>iframe을 이용한 HTML 파일 삽입</h1>
+  <!--실습 파일을 iframe으로 실습하기-->
+  <iframe src="./anchor.html" width="400" height="300" frameborder="0"></iframe>
+
+
+
+
+  <h1>iframe을 활용한 동영상 삽입</h1>
+  <iframe width="400" height="300" src="https://www.youtube.com/embed/tmazLWAeGqk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <h1>iframe을 활용한 지도 삽입</h1>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.155388614002!2d127.03807267027999!3d37.50173571008064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3ff67128961%3A0x55a56e8ffc5bc5d!2z66mA7Yuw7Lqg7Y287IqkIOq1kOycoeyEvO2EsCjrqYDti7DsiqTtgJjslrQp!5e1!3m2!1sko!2skr!4v1545888904852" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <!-- * Daum 지도 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1545888707784" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1545888707784",
+		"key" : "riwo",
+		"mapWidth" : "600",
+		"mapHeight" : "300"
+	}).render();
+</script>
 </body>
 </html>
 ```
