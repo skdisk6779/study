@@ -1,0 +1,55 @@
+@charset "utf-8";
+body{
+  /* background-color: yellow;
+  background-image: url('../asset/poster.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-attachment: fixed; */
+  background: yellow url('../asset/poster.jpg') no-repeat 50% 50% /contain fixed;
+}
+.bg{
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background:pink url('../asset/snowman.png') no-repeat -440px -140px;
+}
+.alpha{
+  background: rgba(0,0,0,0.5);
+  color: rgba(255,255,255,1);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
+.gradient{
+  width: 500px;
+  height: 350px;
+  color: aliceblue;
+  /* background: aqua linear-gradient(-45deg,red,green); */
+  /* background: aqua repeating-linear-gradient(-45deg,red 0, red 10px, green 10px, green 20px);
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+   */
+
+  /* background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px; */
+
+
+background-color: hsl(2, 57%, 40%);
+background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+
+
+}
