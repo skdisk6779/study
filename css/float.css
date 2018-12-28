@@ -26,7 +26,8 @@ h1{
 .menu li{
   float: left;
   text-align: center;
-  padding: 100px;
+  height: 50px;
+  padding: 50px;
 }
 .item1{
   background-color: lime;
@@ -42,7 +43,9 @@ h1{
 }
 .menu a{
   display: block;
-  padding: 100px 0;
+  padding: 50px 50px;
+  margin-left: auto;
+	margin-right: auto;
 }
 .menu a:hover, .menu:focus{
  background-color:pink;
